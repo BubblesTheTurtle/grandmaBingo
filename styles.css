@@ -1,0 +1,97 @@
+body {
+    background-color: var(--background-color); 
+    font-family: Arial;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .bingo-card-container {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto;
+     
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      
+  
+  }
+  
+  .bingo-card-cell.selected {
+      background-color: var(--clicked-color); 
+  }
+  
+  
+  .bingo-card-header {
+      background-color: var(--secondary-color); 
+      font-size: 90px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center
+  }
+  
+  
+  .bingo-card-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+  }
+  
+  
+  .bingo-card-cell {
+      background-color: #ffffff;
+      font-size: auto;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      cursor: pointer
+   
+  }
+  
+  
+  .bingo-card-cell.center {
+      background-color: var(--secondary-color);
+  }
+  
+  
+  
+  
+  #generate-card-btn {
+      padding: 10px 20px; 
+      margin-top: 20px; 
+      background-color: var(--secondary-color);
+      color: #ffffff; 
+      border: none;
+      border-radius: 5px; 
+      font-size: 16px; 
+      cursor: pointer
+  }
+  
+  #generate-card-btn:hover {
+      background-color: var(--pressed-generator);
+  }
+  
+  
+  
+  
+  /* colors */
+  
+  :root {
+      --background-color: #91ccc8;
+      --clicked-color: #a4db76;
+      --secondary-color: #2aaaa2;
+      --pressed-generator: #208781; /* better than Paris Generator */
+  
+  }
+  
